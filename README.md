@@ -27,6 +27,10 @@ opctl run github.com/opspec-pkgs/url.parse#1.0.0
 ```yaml
 op:
   pkg: { ref: github.com/opspec-pkgs/url.parse#1.0.0 }
+  inputs:
+    url:
+  outputs:
+    url:
 ```
 
 # Support
