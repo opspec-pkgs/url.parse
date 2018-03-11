@@ -22,4 +22,4 @@ const url = {
   hash: urlObject.hash,
 };
 
-fs.writeFileSync('/url', JSON.stringify(urlObject));
+fs.writeFileSync('/url', JSON.stringify(url));
