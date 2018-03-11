@@ -1,0 +1,18 @@
+name: github.com/opspec-pkgs/url.parse
+description: parses a URL according to the [WHATWG URL standard](https://url.spec.whatwg.org/)
+inputs:
+  url:
+    string:
+      description: the URL to parse
+outputs:
+  url:
+    object:
+      description: the parsed URL
+version: 1.0.0
+run:
+  container:
+    image: { ref: 'node:9.5.0-alpine' }
+    cmd: [node, /cmd.js]
+    files:
+      /cmd.js:
+      /url: $(url)
